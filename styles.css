@@ -1,7 +1,9 @@
 .container {
-  background-color: #288c25;
   width: 100%;
-  height: 880px;
+}
+
+body {
+  background-color: #288c25;
 }
 
 img {
