@@ -10,7 +10,7 @@ img {
   width: 200px;
 }
 
-/* .leftKey {
+.leftKey {
   transform: rotate(180deg);
   transition: transform 0.5s;
 }
@@ -28,4 +28,4 @@ img {
 .upKey {
   transform: rotate(270deg);
   transition: transform 0.5s;
-} */
+}
