@@ -24,6 +24,7 @@ setInterval(startCar, 16);
 function startCar(event) {
   movement++;
   $car.style.left = movement + 'rem';
+  data.xCoordinate = movement;
 }
 
 document.addEventListener('keydown', rotateCar);
