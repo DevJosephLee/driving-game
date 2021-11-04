@@ -9,3 +9,23 @@ body {
 img {
   width: 200px;
 }
+
+.leftKey {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.downKey {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+}
+
+.rightKey {
+  transform: rotate(360deg);
+  transition: transform 0.5s;
+}
+
+.upKey {
+  transform: rotate(270deg);
+  transition: transform 0.5s;
+}
