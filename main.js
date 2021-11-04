@@ -18,5 +18,12 @@ function rotateCar(event) {
     data.direction = 'up';
   }
 }
+var movement = 0;
+setInterval(startCar, 16);
+
+function startCar(event) {
+  movement++;
+  $car.style.left = movement + 'rem';
+}
 
 document.addEventListener('keydown', rotateCar);
