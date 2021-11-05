@@ -19,22 +19,22 @@ function rotateCar(event) {
   }
 }
 
-// var movement = 0;
+var movement = 0;
 // var interval = null;
 
-// function carMovement() {
-//   movement++;
-//   $car.style.left = movement + 'rem';
-//   data.xCoordinate = movement;
-// }
+function carMovement() {
+  movement++;
+  $car.style.left = movement + 'rem';
+  data.xCoordinate = movement;
+}
 
 function startStopCar(event) {
   if (event.code === 'Space' && data.carStarted === false) {
-    //     interval = setInterval(carMovement, 16);
-    //     data.carStarted = true;
+    setInterval(carMovement, 16);
+    data.carStarted = true;
   } else if (event.code === 'Space' && data.carStarted === true) {
-    //     clearInterval(interval);
-    //     data.carStarted = false;
+    // clearInterval(interval);
+    data.carStarted = false;
   }
 }
 
