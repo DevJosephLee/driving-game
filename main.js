@@ -30,7 +30,7 @@ function carMovement() {
 
 function startStopCar(event) {
   if (event.code === 'Space' && data.carStarted === false) {
-    setInterval(carMovement, 16);
+    interval = setInterval(carMovement, 16);
     data.carStarted = true;
   } else if (event.code === 'Space' && data.carStarted === true) {
     clearInterval(interval);
