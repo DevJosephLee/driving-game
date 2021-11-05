@@ -20,7 +20,7 @@ function rotateCar(event) {
 }
 
 var movement = 0;
-// var interval = null;
+var interval = null;
 
 function carMovement() {
   movement++;
@@ -33,8 +33,8 @@ function startStopCar(event) {
     setInterval(carMovement, 16);
     data.carStarted = true;
   } else if (event.code === 'Space' && data.carStarted === true) {
-    // clearInterval(interval);
-    data.carStarted = false;
+    clearInterval(interval);
+    // data.carStarted = false;
   }
 }
 
