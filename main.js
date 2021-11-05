@@ -34,7 +34,7 @@ function startStopCar(event) {
     data.carStarted = true;
   } else if (event.code === 'Space' && data.carStarted === true) {
     clearInterval(interval);
-    // data.carStarted = false;
+    data.carStarted = false;
   }
 }
 
