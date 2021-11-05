@@ -29,13 +29,13 @@ function rotateCar(event) {
 // }
 
 function startStopCar(event) {
-//   if (event.code === 'Space' && data.carStarted === false) {
-//     interval = setInterval(carMovement, 16);
-//     data.carStarted = true;
-//   } else if (event.code === 'Space' && data.carStarted === true) {
-//     clearInterval(interval);
-//     data.carStarted = false;
-//   }
+  if (event.code === 'Space' && data.carStarted === false) {
+    //     interval = setInterval(carMovement, 16);
+    //     data.carStarted = true;
+  } else if (event.code === 'Space' && data.carStarted === true) {
+    //     clearInterval(interval);
+    //     data.carStarted = false;
+  }
 }
 
 document.addEventListener('keydown', rotateCar);
